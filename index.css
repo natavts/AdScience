@@ -61,7 +61,7 @@
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
   .container {
-    width: 65%;
+    width: 1000px;
     margin: 0 auto;
   }
   .flex-container {
@@ -83,7 +83,7 @@
 @media only screen and (min-width : 1200px) {
   .container {
     position: relative;
-    width: 65%;
+    width: 1000px;
     margin: 0 auto;
   }
   .flex-container {
@@ -104,7 +104,7 @@
 @media only screen and (min-width : 2000px) {
   .container {
     position: relative;
-    width: 50%;
+    width: 1000px;
     margin: 0 auto;
   }
   .flex-container {
@@ -121,7 +121,7 @@
     display: block;
   }
 }
-
+/*
 @media only screen and (min-width : 3000px) {
   .container {
     position: relative;
@@ -141,7 +141,7 @@
   .bg-img, .smart-background{
     display: block;
   }
-}
+}*/
 
 * {
   margin: 0;
@@ -159,20 +159,33 @@ body {
 
 section {
   position: relative;
+  height: 100vh;
+}
+
+.section-half {
+  height: 50%;
 }
 
 h1 {
-  font-size: 54px;
+  font-size: 55px;
 }
 h2 {
   margin-bottom: 30px;
   padding-top: 30px;
 }
+h3 {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+h3.adv {
+  font-size: 25px;
+}
 
 p {
   margin-bottom: 20px;
   font-weight: 200;
-  font-size: 24px;
+  font-size: 25px;
   line-height: 1;
 }
 
@@ -204,7 +217,7 @@ p.regular {
 }
 
 .pub-text {
-  padding-top: 100px;
+  padding-top: 50px;
   width: 100%;
 }
 .pub-background-clip {
@@ -218,6 +231,7 @@ p.regular {
 }
 
 .logo {
+  margin-top: 30px;
   width: 170px;
   height: 80px;
   background: url(images/logo_AdSience.svg);
@@ -258,7 +272,7 @@ p.regular {
   font-size: 26px;
   background: rgba(0,0,0,0);
   margin-bottom: 15px;
-  font-size: 900;
+  font-weight: 600;
   cursor:pointer
 }
 
@@ -285,7 +299,7 @@ p.regular {
   border-color: #ba4e4d;
   background-color: #ba4e4d;
   color: #fff;
-  width: 500px;
+  width: 50%;
   height: 70px;
   margin-top: 30px;
 }
@@ -305,7 +319,7 @@ p.regular {
   height: 100px;
   background-repeat: no-repeat;
   background-position: center;
-  margin: 0 auto 10px;
+  margin: 0 auto 20px;
 }
 .space-around {
   justify-content: space-around;
@@ -340,7 +354,7 @@ footer {
   width: 60px;
   height: 60px;
   background: no-repeat center;
-  margin: 10px auto;
+  margin: 0 auto 20px;
 }
 
 .flex-container p {
@@ -408,7 +422,7 @@ input[type="radio"] + label:last-child {
   margin-right: 0;
 }
 input[type="text"], input[type="email"] {
-  width: 480px;
+  width: 50%;
   height: 40px;
   margin-bottom: 10px;
   font-size: 16px;
@@ -472,8 +486,8 @@ input[type="radio"]:checked + label span {
 }
 .iPad {
   top: 0;
-  right:0;
-  height: 40%;
+  right:70px;
+  height: 50%;
 }
 .notebook1 {
   bottom: -2px;
