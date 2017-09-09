@@ -1,4 +1,4 @@
-@media only screen and (min-width : 320px) {
+/*@media only screen and (min-width : 320px) {
   .container {
     width: 100%;
   }
@@ -17,7 +17,7 @@
   }
 }
 /* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px) {
+/*@media only screen and (min-width : 480px) {
   .container {
     width: 100%;
     margin: 0 auto;
@@ -35,10 +35,10 @@
   .bg-img, .smart-background{
     display: none;
   }
-}
+}*/
 
 /* Small Devices, Tablets */
-@media only screen and (min-width : 768px) {
+/*@media only screen and (min-width : 768px) {
   .container {
     width: 100%;
     margin: 0 auto;
@@ -56,10 +56,10 @@
   .bg-img, .smart-background{
     display: none;
   }
-}
+}*/
 
 /* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
+/*@media only screen and (min-width : 992px) {
   .container {
     width: 1000px;
     margin: 0 auto;
@@ -77,10 +77,20 @@
   .bg-img, .smart-background{
     display: block;
   }
-}
+}*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
+@media only screen and (min-height : 600px) {
+  section {
+    position: relative;
+    height: 100vh;
+  }
+
+  .section-half {
+    height: 50%;
+    position: relative;
+  }
+
   .container {
     position: relative;
     width: 1000px;
@@ -100,7 +110,33 @@
     display: block;
   }
 }
-
+@media only screen and (min-height : 500px) {
+  section {
+    height: 100%;
+  }
+  .section-half  {
+    height: 100%
+  }
+  .container {
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+  }
+  .flex-container {
+    display: flex !important;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .text {
+    width: 61%;
+    margin-bottom: 60px;
+    z-index: 2;
+  }
+  .bg-img, .smart-background{
+    display: block;
+  }
+}
+  /*
 @media only screen and (min-width : 2000px) {
   .container {
     position: relative;
@@ -120,7 +156,7 @@
   .bg-img, .smart-background{
     display: block;
   }
-}
+}*/
 /*
 @media only screen and (min-width : 3000px) {
   .container {
@@ -157,17 +193,18 @@ body {
 
 }
 
-section {
+/*section {
   position: relative;
   height: 100vh;
-}
+}*/
 
-.section-half {
+/*.section-half {
   height: 50%;
-}
+  position: relative;
+}*/
 
 h1 {
-  font-size: 55px;
+  font-size: 3em;
 }
 h2 {
   margin-bottom: 30px;
@@ -185,7 +222,7 @@ h3.adv {
 p {
   margin-bottom: 20px;
   font-weight: 200;
-  font-size: 25px;
+  font-size: 1.2em;
   line-height: 1;
 }
 
@@ -286,9 +323,7 @@ p.regular {
 
 .publisher-btn {
   border-color: #ffbd5e;
-  position: absolute;
-  bottom: 0;
-  right: 0;
+  float: right;
 }
 .publisher-btn:hover {
   background: #ffbd5e;
@@ -314,6 +349,9 @@ p.regular {
 .container > * {
   z-index: 1;
 }
+ .container {
+   height: 100%;
+ }
 .flex-img {
   width: 150px;
   height: 100px;
