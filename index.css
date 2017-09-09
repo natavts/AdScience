@@ -80,7 +80,7 @@
 }*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (min-height : 600px) {
+@media only screen and (min-width : 900px) {
   section {
     position: relative;
     height: 100vh;
@@ -90,7 +90,12 @@
     height: 50%;
     position: relative;
   }
-
+  .section-55{
+    height: 55%;
+  }
+  .section-45{
+    height: 45%;
+  }
   .container {
     position: relative;
     width: 1000px;
@@ -101,22 +106,35 @@
     justify-content: space-between;
     flex-direction: row;
   }
+  .format{
+    width: 25%;
+  }
+  .format-left{
+    padding-left: 5vw;
+  }
+  .format-right{
+    padding-right: 5vw;
+  }
+  .format-center{
+    width: 50%
+  }
   .text {
     width: 61%;
-    margin-bottom: 60px;
+    /*margin-bottom: 2.4em;*/
     z-index: 2;
   }
   .bg-img, .smart-background{
     display: block;
   }
 }
-@media only screen and (min-height : 500px) {
+@media only screen and (max-height : 500px) {
   section {
     height: 100%;
   }
   .section-half  {
     height: 100%
   }
+
   .container {
     position: relative;
     width: 1000px;
@@ -186,6 +204,7 @@
 
 body {
   font-family: 'Titillium Web', sans-serif;
+  font-size: 25px;
   color: #5f5c5c;
 }
 
@@ -204,25 +223,26 @@ body {
 }*/
 
 h1 {
-  font-size: 3em;
+  font-size: 2.2em;
 }
 h2 {
-  margin-bottom: 30px;
-  padding-top: 30px;
+  font-size: 1em;
+  margin-bottom: 1vh;
+  padding-top: 0.5vh;
 }
 h3 {
   font-weight: bold;
-  font-size: 16px;
+  font-size: 0.64em;
 }
 
 h3.adv {
-  font-size: 25px;
+  font-size: 1em;
 }
 
 p {
-  margin-bottom: 20px;
+  margin-bottom: 1vh;
   font-weight: 200;
-  font-size: 1.2em;
+  font-size: 1em;
   line-height: 1;
 }
 
@@ -254,7 +274,7 @@ p.regular {
 }
 
 .pub-text {
-  padding-top: 50px;
+  padding-top: 5vh;
   width: 100%;
 }
 .pub-background-clip {
@@ -268,9 +288,9 @@ p.regular {
 }
 
 .logo {
-  margin-top: 30px;
-  width: 170px;
-  height: 80px;
+  margin-top: 3vh;
+  /*width: 170px;*/
+  height: 8vh;
   background: url(images/logo_AdSience.svg);
   background-repeat: no-repeat;
 }
@@ -289,11 +309,16 @@ p.regular {
 .adv {
   color: #ba4e4d;
 }
-.adv-formats{
-  padding-top: 230px;
+/*.adv-formats{
+  padding-top: 15vh;
 }
 .adv-formats + p {
-  font-size: 32px;
+  font-size: 1em;
+}*/
+.adv-formats-bg{
+  position: absolute;
+  /*display: none;*/
+
 }
 .pub {
   color: #ffbd5e;
@@ -306,9 +331,9 @@ p.regular {
   border: 3px solid black;
   width: 140px;
   height: 45px;
-  font-size: 26px;
+  font-size: 1em;
   background: rgba(0,0,0,0);
-  margin-bottom: 15px;
+  margin-bottom: 1.8vh;
   font-weight: 600;
   cursor:pointer
 }
@@ -336,7 +361,7 @@ p.regular {
   color: #fff;
   width: 50%;
   height: 70px;
-  margin-top: 30px;
+  margin-top: 1.8vh;
 }
 .btn-contact:hover {
   background: #9a4140;
@@ -357,7 +382,7 @@ p.regular {
   height: 100px;
   background-repeat: no-repeat;
   background-position: center;
-  margin: 0 auto 20px;
+  margin: 0 auto 0.8em;
 }
 .space-around {
   justify-content: space-around;
@@ -365,7 +390,17 @@ p.regular {
 .center {
   text-align: center;
 }
-.right {
+.container-adv-formats{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-adv-formats > div {
+  width: 100%
+}
+
+
+.right-text {
   text-align: right;
 }
 footer {
@@ -392,11 +427,11 @@ footer {
   width: 60px;
   height: 60px;
   background: no-repeat center;
-  margin: 0 auto 20px;
+  margin: 0 auto 3.7px;
 }
 
 .flex-container p {
-  font-size: 16px;
+  font-size: 0.64em;
   font-weight: 300;
 }
 
@@ -433,26 +468,34 @@ footer {
 
 .form-title {
   line-height: 1.2;
-  margin-bottom: 70px;
-  padding-top: 50px;
-  font-weight: 700;
-  font-size: 48px;
+  padding-top: 1vh;
+  margin-bottom: 1vh;
 }
-
+/*
 form {
   margin-bottom: 100px;
 }
 
 form p {
   margin-bottom: 10px;
+}*/
+
+form {
+  /*margin-bottom: 1.8vh;
+  margin-top: 1.8vh;*/
 }
+
+form p {
+  margin-bottom: 1.8vh;
+}
+
 
 input[type="radio"] {
   display: none;
 }
 input[type="radio"] + label {
   color: #ba4e4d;
-  font-size: 16px;
+  font-size: 0.64em;
   font-weight: 400;
   margin-right: 40px;
 }
@@ -463,7 +506,7 @@ input[type="text"], input[type="email"] {
   width: 50%;
   height: 40px;
   margin-bottom: 10px;
-  font-size: 16px;
+  font-size: 0.64em;
   padding: 0 20px;
 }
 
@@ -494,11 +537,11 @@ input[type="radio"]:checked + label span {
   transition:background-color 0.4s linear;
 }
 
-.parnter {
+.partner {
   width: 120px;
   height: 40px;
   background: no-repeat center;
-  margin: 25px auto;
+  margin: 1.8vh auto;
   background-size: contain;
 }
 
@@ -540,33 +583,38 @@ input[type="radio"]:checked + label span {
 .smart {
   top: 20px;
   left: 30px;
-  height: 25%;
+  height: 19vh;
+  z-index: 1;
 }
 .smart1 {
   top: 20px;
   left: -70px;
-  height: 50%;
+  height: 19vh;
+  z-index: 1;
 }
 .smart2 {
   top: 87px;
   left: 44px;
-  height: 50%;
+  height: 19vh;
+  z-index: 1;
 }
 .smart3 {
   top: 20px;
   right: 2px;
-  height: 50%;
+  height: 19vh;
+  z-index: 1;
 }
 .smart-background{
   position: relative;
+  width: 100%
 }
 
 .smart-background.bottom {
-  height: 280px;
+  height: 50vh;
 }
 
 .smart-background.top {
-  height: 220px;
+  height: 40vh;
 }
 
 .bg-img {
@@ -577,4 +625,19 @@ footer p {
   margin: 0;
   font-size: 16px;
   line-height: inherit;
+}
+
+.adv-bg{
+  height: 100vh;
+  position: relative;
+  background-image:url("images/smart.png"), url("images/smart.png"), url("images/smart.png"), url("images/smart.png");
+  background-position: top 10vh left 20vw, bottom 85px left -100px,  bottom left 40px, bottom 50px right -60px;
+  background-size: 200px;
+  background-repeat: no-repeat;
+}
+
+.all-footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
 }
