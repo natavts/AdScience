@@ -6,7 +6,3 @@ function checkRadio(id) {
   $("input[name='name']").focus();
   document.getElementById(id).checked = true;
 }
-$.scrollify({
-    touchScroll:false,
-    updateHash: false
-  });
