@@ -4,7 +4,7 @@
   }
 }
 
-@media only screen and (min-width : 900px) {
+@media only screen and (min-width : 1000px) {
   .format-left{
     width: 50%;
   }
@@ -69,7 +69,7 @@ section {
   position: relative;
   height: 100vh;
 }
-@media only screen and (max-width : 900px) {
+@media only screen and (max-width : 1000px) {
  section {
    height: 100%;
  }
@@ -106,6 +106,28 @@ h3 {
   font-size: 0.64em;
 }
 
+@media only screen and  (min-width : 1000px) {
+  h3 {
+    font-size: 0.64em;
+  }
+}
+
+@media only screen and  (min-width : 600px) and (max-width : 999px) {
+  h3 {
+    font-size: 0.8em;
+  }
+}
+
+@media only screen and (max-width : 599px) {
+  h3 {
+    font-size: 0.9em;
+
+  }
+}
+
+
+
+
 h3.adv {
   font-size: 1em;
 }
@@ -117,11 +139,35 @@ p {
   line-height: 1.2;
 }
 
+
+@media only screen and  (min-width : 1000px) {
+  p {
+    margin-bottom: 1.8vh;
+  }
+}
+
+@media only screen and  (min-width : 600px) and (max-width : 999px) {
+  p {
+    margin-bottom: 3vh;
+  }
+}
+
+@media only screen and (max-width : 599px) {
+  p {
+    margin-bottom: 5vh;
+
+  }
+}
+
+
+
+
+
 p.regular {
   font-weight: 400;
 }
 .text {
-  width: 61%;
+  width: 65%;
   /*margin-bottom: 2.4em;*/
   z-index: 2;
 }
@@ -354,27 +400,46 @@ footer {
   margin: 0 auto 3.7px;
 }
 
-.flex-container {
+/*.flex-container {
   display: flex !important;
   justify-content: space-between;
   flex-direction: row;
-}
+}*/
 
-@media only screen and (min-width : 900px) {
+@media only screen and (min-width : 1000px) {
   .flex-container {
+    display: flex !important;
+    justify-content: space-between;
     flex-direction: row;
   }
 }
 
-@media only screen and  (max-width : 899px) {
+@media only screen and (max-width : 999px) {
   .flex-container {
     flex-direction: column;
   }
 }
 
-.flex-container p {
-  font-size: 0.64em;
-  font-weight: 300;
+
+@media only screen and  (min-width : 1000px) {
+  .flex-container p {
+    font-size: 0.64em;
+    font-weight: 300;
+  }
+}
+
+@media only screen and  (min-width : 600px) and (max-width : 999px) {
+  .flex-container p {
+    font-size: 0.8em;
+    font-weight: 300;
+  }
+}
+
+@media only screen and (max-width : 599px) {
+  .flex-container p {
+    font-size: 0.9em;
+    font-weight: 300;
+  }
 }
 
 .ppa {
@@ -513,15 +578,17 @@ footer p {
   line-height: inherit;
 }
 
-.adv-bg{
-  height: 100vh;
-  position: relative;
-  background-image:url("images/smart.png"), url("images/smart.png"), url("images/smart.png"), url("images/smart.png");
-  background-position: top 10vh left 20vw, bottom 85px left -100px,  bottom left 40px, bottom 50px right -60px;
-  background-size: 200px;
-  background-repeat: no-repeat;
+@media only screen and (min-width : 1000px ) {
+  .adv-bg{
+    height: 100vh;
+    position: relative;
+    background-image:url("images/smart.png"), url("images/smart.png"), url("images/smart.png"), url("images/smart.png");
+    background-position: top 10vh left 20vw, bottom 85px left -100px,  bottom left 40px, bottom 50px right -60px;
+    background-size: 200px;
+    background-repeat: no-repeat;
+  }
 }
-@media only screen and (max-width : 1000px) {
+@media only screen and (min-width : 600px ) and (max-width : 999px) {
     .adv-bg{
       height: 100%;
       position: relative;
@@ -532,21 +599,41 @@ footer p {
     }
 }
 
-.btn-magic-bg {
+@media only screen and (max-width : 599px ) {
+    .adv-bg{
+      background-color: rgba(0, 0, 0, 0);
+    }
+}
+
+
+/*.btn-magic-bg {
   padding-bottom: 8vh;
   height: 100%;
   position: relative;
   background-image: url("images/magic.png");
   background-position: top center;
   background-repeat: no-repeat;
-}
-@media only screen and (max-width : 1000px) {
+}*/
+@media only screen and (min-width : 1000px) {
   .btn-magic-bg {
+    padding-bottom: 8vh;
     height: 0%;
     position: relative;
     background-image: url("images/magic.png");
-    background-position: top 55vh center;
-    background-size: 45%;
+    background-position: top center;
+    background-size: 100%%;
+    background-repeat: no-repeat;
+  }
+
+}
+@media only screen and (min-width : 600px) and (max-width : 999px) {
+  .btn-magic-bg {
+    padding-bottom: 8vh;
+    height: 0%;
+    position: relative;
+    background-image: url("images/magic.png");
+    background-position: top center;
+    background-size: 100%%;
     background-repeat: no-repeat;
   }
 
