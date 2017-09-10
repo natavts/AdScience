@@ -80,7 +80,7 @@
 }*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (min-width : 900px) {
+@media only screen and (min-width : 1000px) {
   section {
     position: relative;
     height: 100vh;
@@ -95,6 +95,12 @@
   }
   .section-45{
     height: 45%;
+  }
+  .section-contact {
+    flex-direction: column;
+  }
+  .container-contact-form {
+    flex-grow: 1;
   }
   .container {
     position: relative;
@@ -208,6 +214,15 @@ body {
   color: #5f5c5c;
 }
 
+@media only screen and (max-height : 900px) {
+  body {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+    color: #5f5c5c;
+  }
+}
+
+
 .page {
 
 }
@@ -240,10 +255,10 @@ h3.adv {
 }
 
 p {
-  margin-bottom: 1vh;
-  font-weight: 200;
+  margin-bottom: 1.8vh;
+  font-weight: 300;
   font-size: 1em;
-  line-height: 1;
+  line-height: 1.2;
 }
 
 p.regular {
@@ -289,8 +304,9 @@ p.regular {
 
 .logo {
   margin-top: 3vh;
+  margin-bottom: 3vh;
   /*width: 170px;*/
-  height: 8vh;
+  height: 6vh;
   background: url(images/logo_AdSience.svg);
   background-repeat: no-repeat;
 }
@@ -486,7 +502,7 @@ form {
 }
 
 form p {
-  margin-bottom: 1.8vh;
+  margin-bottom: 1vh;
 }
 
 
@@ -635,9 +651,17 @@ footer p {
   background-size: 200px;
   background-repeat: no-repeat;
 }
+.btn-magic-bg {
+  height: 100%;
+  position: relative;
+  background-image: url("images/magic.png");
+  background-position: top 55vh center;
+  background-size: 45%;
+  background-repeat: no-repeat;
+}
 
 .all-footer {
-  position: absolute;
+  /*position: absolute;*/
   width: 100%;
   bottom: 0;
 }
