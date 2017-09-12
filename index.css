@@ -390,7 +390,7 @@ p.regular {
 @media only screen and (max-width : 759px) {
   .pub-background-clip-yellow {
     position: absolute;
-    background: #fff;
+    background: #ffb55e;
     width: 100%;
     height: 100%;
     z-index: -2;
@@ -524,6 +524,7 @@ p.regular {
     width: 100px;
     height: 35px;
     font-size: 1em;
+    line-height: 1;
     background: rgba(0,0,0,0);
     margin-bottom: 1vh;
     font-weight: 600;
@@ -538,10 +539,10 @@ p.regular {
     border: 5px solid black;
     width: 96px;
     height: 33px;
-    font-size: 0.7em;
+    font-size: 0.8em;
     /*margin-bottom: 1.8vh;*/
     font-weight: 700;
-    line-height: 0.7em;
+    line-height: 0.8em;
     cursor:pointer
   }
 }
