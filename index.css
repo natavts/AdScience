@@ -39,6 +39,10 @@ body {
   color: #5f5c5c;
 }
 
+button {
+  font-family: 'Titillium Web', sans-serif;
+}
+
 @media only screen and (max-height : 900px) and (max-width : 1400px) {
   body {
     font-family: 'Titillium Web', sans-serif;
@@ -204,10 +208,6 @@ h2 {
   }
 }
 
-
-
-
-
 h3 {
   font-weight: bold;
   font-size: 0.64em;
@@ -275,9 +275,6 @@ p {
 
   }
 }
-
-
-
 
 p.regular {
   font-weight: 400;
@@ -517,7 +514,7 @@ p.regular {
   font-size: 1em;
   background: rgba(0,0,0,0);
   margin-bottom: 1.8vh;
-  font-weight: 600;
+  font-weight: bold;
   cursor:pointer
 }
 
@@ -543,12 +540,11 @@ p.regular {
     height: 33px;
     font-size: 0.7em;
     /*margin-bottom: 1.8vh;*/
-    font-weight: 600;
+    font-weight: 700;
+    line-height: 0.7em;
     cursor:pointer
   }
 }
-
-
 
 .advertise-btn {
   border-color: #ba4e4d;
@@ -929,7 +925,7 @@ footer p {
   .advertiser-bg {
     height: 100%;;
     position: relative;
-    background-image: url("images/iPad.png"), url("images/notebook1.png");
+    background-image: url("images/iPad.png"), url("images/AdScience_Agency_site_3(2).png");
     background-position: top right 44px, bottom right;
     background-size: 20vh, 30vh;
     background-repeat: no-repeat;
@@ -940,7 +936,7 @@ footer p {
   .advertiser-bg {
     height: 100%;
     position: relative;
-    background-image: url("images/iPad.png"), url("images/notebook1.png");
+    background-image: url("images/iPad.png"), url("images/AdScience_Agency_site_3(2).png");
     background-position: top right 10vw, bottom right 0vw;
     background-size: 15vh, 20vh;
     background-repeat: no-repeat;
