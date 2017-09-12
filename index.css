@@ -47,6 +47,14 @@ body {
   }
 }
 
+@media only screen and (max-height : 550px) and (max-width : 800px) {
+  body {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 16px;
+    color: #5f5c5c;
+  }
+}
+
 /*@media only screen and (max-width : 900px) {
   body {
     font-family: 'Titillium Web', sans-serif;
@@ -162,6 +170,7 @@ h1 {
     font-size: 1.5em;
   }
 }
+
 
 .h1-adv-shadow {
   text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 2px 2px #fff, -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff;
@@ -344,6 +353,13 @@ p.regular {
   }
 }
 
+@media only screen and (max-device-width : 1024px) and (max-device-height : 1366px) {
+  .pub-text {
+    padding-top: 10vh;
+    width: 100%;
+  }
+}
+
 
 .pub-background-clip {
   position: absolute;
@@ -430,6 +446,13 @@ p.regular {
 .adv {
   color: #ba4e4d;
 }
+
+@media only screen and (max-width : 759px) {
+  .adv {
+    margin-right: 10vw;
+  }
+}
+
 /*.adv-formats{
   padding-top: 15vh;
 }
@@ -497,6 +520,21 @@ p.regular {
   font-weight: 600;
   cursor:pointer
 }
+
+@media only screen and (max-height : 900px) and (max-width : 1400px) {
+  .btn {
+    border: 3px solid black;
+    width: 100px;
+    height: 35px;
+    font-size: 1em;
+    background: rgba(0,0,0,0);
+    margin-bottom: 1vh;
+    font-weight: 600;
+    cursor:pointer
+  }
+
+}
+
 
 @media only screen and (max-width : 759px) {
   .btn {
