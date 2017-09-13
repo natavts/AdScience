@@ -233,9 +233,6 @@ h3 {
   }
 }
 
-
-
-
 h3.adv {
   font-size: 1em;
 }
@@ -351,7 +348,7 @@ p.regular {
   }
 }
 
-@media only screen and (max-device-width : 1024px) and (max-device-height : 1366px) {
+@media only screen and (device-width : 1024px) and (device-height : 1366px) {
   .pub-text {
     padding-top: 10vh;
     width: 100%;
@@ -446,7 +443,7 @@ p.regular {
 }
 
 @media only screen and (max-width : 759px) {
-  .adv {
+  .adv-margin {
     margin-right: 10vw;
   }
 }
@@ -616,7 +613,7 @@ p.regular {
    }
 }
 
-@media only screen and (max-device-width : 1024px) and (max-device-height : 1366px) {
+@media only screen and (device-width : 1024px) and (device-height : 1366px) {
   .container {
    position: relative;
    width: 90%;
@@ -1017,7 +1014,7 @@ footer p {
       }
   }
 
-@media only screen and (max-device-width : 1024px) and (max-device-height : 1366px) {
+@media only screen and (device-width : 1024px) and (device-height : 1366px) {
   .publisher-bg {
     height: 100%;;
     position: relative;
