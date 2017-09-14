@@ -166,6 +166,7 @@ h1 {
     font-size: 1.8em;
     line-height: 1.1;
     padding-bottom: 2vh;
+    padding-top: 4vh;
 
   }
 }
@@ -407,7 +408,7 @@ p.regular {
 @media only screen and (max-width : 759px) {
   .logo {
     margin-top: 3vh;
-    margin-bottom: 4vh;
+    margin-bottom: 0vh;
     /*width: 170px;*/
     height: 7vh;
     background: url(images/logo_AdSience.svg);
@@ -438,6 +439,7 @@ p.regular {
 .background {
   background: url(images/4_Site\ Background.svg)
 }
+
 .adv {
   color: #ba4e4d;
 }
@@ -448,13 +450,7 @@ p.regular {
   }
 }
 
-/*.adv-formats{
-  padding-top: 15vh;
-}
-.adv-formats + p {
-  font-size: 1em;
-}*/
-.adv-formats-bg{
+.adv-formats-bg {
   position: absolute;
   /*display: none;*/
 
@@ -570,6 +566,15 @@ p.regular {
   height: 70px;
   margin-top: 1.8vh;
 }
+
+@media only screen and (max-width : 759px ) {
+.btn-contact {
+  width: 50%;
+  height: 45px;
+
+}
+}
+
 .btn-contact:hover {
   background: #9a4140;
   border-color: #9a4140;
@@ -761,6 +766,13 @@ footer {
   padding-top: 1vh;
   margin-bottom: 1vh;
 }
+
+@media only screen and (max-width : 759px ) {
+.form-title {
+  padding-top: 4vh;
+}
+}
+
 /*
 form {
   margin-bottom: 100px;
