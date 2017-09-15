@@ -158,6 +158,11 @@ h1 {
   h1 {
     line-height: 1.1;
     padding-bottom: 2vh;
+    padding-top: 4vh;
+  }
+
+  section:first-child h1 {
+    padding-top: 0;
   }
 }
 
@@ -168,6 +173,9 @@ h1 {
     padding-bottom: 2vh;
     padding-top: 4vh;
 
+  }
+  section:first-child h1 {
+    padding-top: 0;
   }
 }
 
@@ -356,6 +364,12 @@ p.regular {
   }
 }
 
+@media only screen and (min-width : 321px) and (max-width : 759px) {
+  section:last-child .pub-text {
+    display: none !important;
+  }
+}
+
 
 .pub-background-clip {
   position: absolute;
@@ -534,7 +548,7 @@ p.regular {
     width: 96px;
     height: 33px;
     font-size: 0.8em;
-    /*margin-bottom: 1.8vh;*/
+    margin-bottom: 1.8vh;
     font-weight: 700;
     line-height: 0.8em;
     cursor:pointer
@@ -568,11 +582,10 @@ p.regular {
 }
 
 @media only screen and (max-width : 759px ) {
-.btn-contact {
-  width: 50%;
-  height: 45px;
-
-}
+  .btn-contact {
+    width: 50%;
+    height: 45px;
+  }
 }
 
 .btn-contact:hover {
@@ -885,12 +898,13 @@ footer p {
 }
 @media only screen and (min-width : 760px ) and (max-width : 999px) {
     .adv-bg{
-      height: 100%;
+      background-color: rgba(0, 0, 0, 0);
+      /*height: 100%;
       position: relative;
       background-image:url("images/smart.png"), url("images/smart.png"), url("images/smart.png"), url("images/smart.png");
       background-position: top 10vh left 20vw, bottom 85px left -100px,  bottom left 40px, bottom 50px right -60px;
       background-size: 200px;
-      background-repeat: no-repeat;
+      background-repeat: no-repeat;*/
     }
 }
 
