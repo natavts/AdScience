@@ -307,6 +307,7 @@ p.regular {
 
 .adv-background-clip {
   position: absolute;
+  /*background: url(images/adv-bg.svg);*/
   width: 100%;
   height: 100%;
   z-index: -1;
@@ -319,6 +320,8 @@ p.regular {
     z-index: -1;
   }
 }
+
+
 
 .text-wrapper {
   margin-bottom: 2vh;
@@ -382,6 +385,36 @@ p.regular {
   }
 }
 
+
+
+/*@media only screen and (min-width : 800px) {
+  .polygon-desktop {
+    width: 100%;
+    height: 100%;
+  }
+}*/
+
+.polygon-mobile {
+  height: 100%;
+  display: none;
+}
+.polygon-desktop {
+  height: 100%;
+  display: block;
+}
+
+
+@media only screen and (max-width : 759px) {
+  .polygon-mobile{
+    height: 100%;
+    display: block;
+  }
+  .polygon-desktop {
+    height: 100%;
+    display: none;
+  }
+}
+
 .pub-background-clip-yellow {
   position: absolute;
   background: #ffb55e;
@@ -406,7 +439,8 @@ p.regular {
   margin-bottom: 3vh;
   /*width: 170px;*/
   height: 6vh;
-  background: url(images/logo_AdSience.svg);
+  background-position: left;
+  background-image: url(images/logo_AdSience.svg);
   background-repeat: no-repeat;
 }
 @media only screen and (max-width : 759px) {
