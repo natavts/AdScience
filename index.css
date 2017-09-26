@@ -321,8 +321,6 @@ p.regular {
   }
 }
 
-
-
 .text-wrapper {
   margin-bottom: 2vh;
 }
@@ -342,6 +340,9 @@ p.regular {
 .pub-text {
   padding-top: 5vh;
   width: 100%;
+}
+.form-message {
+  color: green;
 }
 
 @media only screen and (max-width : 759px) {
@@ -954,7 +955,7 @@ footer p {
     position: relative;
     background-image: url("images/magic.png");
     background-position: top center;
-    background-size: 100%%;
+    background-size: 100%;
     background-repeat: no-repeat;
   }
 
@@ -966,7 +967,7 @@ footer p {
     position: relative;
     background-image: url("images/magic.png");
     background-position: top center;
-    background-size: 100%%;
+    background-size: 100%;
     background-repeat: no-repeat;
   }
 
