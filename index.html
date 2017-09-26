@@ -6,16 +6,34 @@
     <title>AdScience</title>
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web:200,200i,300,300i,400,400i,600,600i,700,700i,900" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
-    <script   src="https://code.jquery.com/jquery-3.2.1.min.js"   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="   crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script>
-        $(function() {
-          $.scrollify({
-            section : ".scroll",
-            touchScroll:false,
-            updateHash: false
-          });
+        $(function () {
+            $.scrollify({
+                section: ".scroll",
+                touchScroll: false,
+                updateHash: false
+            });
         });
-      </script>
+        $(document).ready(function () {
+            $('.request-form').on('submit', function (e) {
+                e.preventDefault();
+                $.ajax({
+                    url: '/send.php',
+                    method: 'POST',
+                    data: $(e.target).serialize(),
+                    success: function (response) {
+                        if (response.data) {
+                            $('.form-message').text('Thank you for your request. You will be contacted shortly.');
+                        }
+                        $("input[name='name']").val('');
+                        $("input[name='email']").val('');
+                    }
+                })
+            });
+        })
+    </script>
   </head>
   <body>
     <div class="page">
@@ -183,22 +201,22 @@
         <div>
         <div class="container center">
             <h1 class="adv form-title">Once you try working<br/>with AdScience Agency<br/>you'll never switch to something else!</h1>
-            <div class="text pub-text"> </div>
-            <form action="index.html" method="post">
+            <div class="text pub-text form-message"> </div>
+            <form class="request-form">
               <p><input type="text" name="name" value="" placeholder="Name*"></p>
               <p><input type="email" name="email" value="" placeholder="E-mail*"></p>
-              <p><input type="radio" id="monetize" name="type" value="">
+              <p><input type="radio" id="monetize" name="type" value="monetize">
                 <label for="monetize">
                   <span></span>
                   I want to monetize
                 </label>
-              <input type="radio" id="advertise" name="type" value="">
+              <input type="radio" id="advertise" name="type" value="advertise">
               <label for="advertise">
                 <span></span>
                 I want to advertise
               </label></p>
-              <div class=" btn-magic-bg">
-                <button type="button" class="btn btn-contact" name="send">CONTACT ME</button>
+              <div class="btn-magic-bg">
+                <button type="submit" class="btn btn-contact" name="send">CONTACT ME</button>
               </div>
             </form>
           </div>
@@ -217,7 +235,7 @@
           </div>
         </div>
       </div>
-      <footer class="center"><p>©2016-2017 adsciense.com by AD5 LTD, All Rights Reserved.</p></footer>
+      <footer class="center"><p>©2016-2017 adscience.pro by AD5 LTD, All Rights Reserved.</p></footer>
     </div>
 
   </section>
