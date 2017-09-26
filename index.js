@@ -1,5 +1,4 @@
 function checkRadio(id) {
-  console.log(id);
   $('html, body').animate({
         scrollTop: $("form").offset().top
     }, 400);
